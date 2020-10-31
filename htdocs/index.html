@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="./css/scss/style.css">
+</head>
+
+<body>
+    <div class="demo-cover">
+        <div class="nav-wrap">
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li>
+                        <div class="nav-list-front">
+                            <div class="nav-list-ttl">Category</div>
+                            <div class="nav-show-all" id="nav-show-all">
+                                <input type="radio" id="nav-input-all" name="nav-input" class="nav-input" data-sort-nav="show-all" checked>
+                                <label for="nav-input-all" id="show-all" class="nav-child-inner"><span>全て見る</span></label>
+                            </div>
+                        </div>
+                        <ul class="nav-child">
+                            <li>
+                                <input type="radio" id="nav-input-fruits" name="nav-input" class="nav-input" data-sort-nav="fruits">
+                                <label for="nav-input-fruits" id="fruits" class="nav-child-inner"><div class="nav-txt">くだもの</div></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nav-input-vegetables" name="nav-input" class="nav-input" data-sort-nav="vegetables">
+                                <label for="nav-input-vegetables" id="vegetables" class="nav-child-inner"><div class="nav-txt">野菜</div></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nav-input-meat" name="nav-input" class="nav-input" data-sort-nav="meat">
+                                <label for="nav-input-meat" id="meat" class="nav-child-inner"><div class="nav-txt">肉</div></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nav-input-fish" name="nav-input" class="nav-input" data-sort-nav="fish">
+                                <label for="nav-input-fish" id="fish" class="nav-child-inner"><div class="nav-txt">魚</div></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nav-input-dairy-products" name="nav-input" class="nav-input" data-sort-nav="dairy-products">
+                                <label for="nav-input-dairy-products" id="cereals" class="nav-child-inner"><div class="nav-txt">乳製品</div></label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sort-block">
+                <div class="sort-ttl" id="sort-ttl">Show all</div>
+                    <ul class="sort-list" id="sort-list">
+                        <li data-sort-item="fruits" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>りんご</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>くだもの</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fish" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>アジ</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>魚</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fruits,vegetables" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>唐辛子</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>くだもの</span>
+                                    <span>野菜</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="meat" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>豚肉</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>肉</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fruits,vegetables" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>なす</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>くだもの</span>
+                                    <span>野菜</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fish" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>ブリ</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>魚</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fruits" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>いちご</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>くだもの</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="vegetables" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>すいか</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>野菜</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="meat" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>鶏肉</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>肉</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="vegetables" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>ほうれん草</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>野菜</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="fish" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>まぐろ</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>魚</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="dairy-products" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>ヨーグルト</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>乳製品</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="meat" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>ベーコン</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>肉</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-sort-item="dairy-products" class="is-selected">
+                            <div class="sort-list-inner">
+                                <div class="sort-list-ttl">
+                                    <p>チーズ</p>
+                                </div>
+                                <div class="sort-list-category">
+                                    <span>乳製品</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div> 
+    <script src="./js/script.js"></script>
+</body>
+</html>
